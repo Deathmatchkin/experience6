@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microservices Demo</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        a:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .note {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Microservices Demo</h1>
+        
+        <h2>📁 User Service (Port 5001)</h2>
+        <a href="http://localhost:5001/users/john">👤 John's Data</a>
+        <a href="http://localhost:5001/users/jane">👤 Jane's Data</a>
+        <a href="http://localhost:5001/users/bob">👤 Bob's Data</a>
+        
+        <h2>📚 Course Service (Port 5000)</h2>
+        <a href="http://localhost:5000/user-course/john">📖 John's Course</a>
+        <a href="http://localhost:5000/user-course/jane">📖 Jane's Course</a>
+        <a href="http://localhost:5000/user-course/bob">📖 Bob's Course</a>
+        
+        <div class="note">
+            ⚡ Make sure both services are running before clicking links!
+        </div>
+    </div>
+</body>
+</html>
